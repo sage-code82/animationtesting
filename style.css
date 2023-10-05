@@ -1,0 +1,37 @@
+body {
+  background-size: 400% 400%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-family: "Cutive Mono", monospace;
+  color: black;
+}
+
+.bounce {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 3rem;
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  animation: bounceAndChangeColor 4s ease infinite;
+}
+
+@keyframes bounceAndChangeColor {
+  0%,
+  100% {
+    transform: translateY(0);
+    background-color: red;
+  }
+  50% {
+    transform: translateY(-300px);
+    background-color: blue; /* Change color when it reaches the bottom */
+  }
+}
