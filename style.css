@@ -1,75 +1,3 @@
-/* body {
-  background-size: 400% 400%;
-  height: 100vh;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-h2 {
-  font-family: "Cutive Mono", monospace;
-  color: black;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-main {
-  display: flex;
-  justify-content: space-between;
-}
-
-.bounce {
-  margin: 3rem;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-
-  animation: bounceAndChangeColor 10s ease infinite;
-}
-
-.bounce2 {
-  margin: 3rem;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-
-  animation: bounceAndChangeColor 10s ease infinite;
-}
-
-.bounce3 {
-  margin: 3rem;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-
-  animation: bounceAndChangeColor 10s ease infinite;
-}
-
-.bounce4 {
-  margin: 3rem;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-
-  animation: bounceAndChangeColor 10s ease infinite;
-}
-
-@keyframes bounceAndChangeColor {
-  0%,
-  100% {
-    transform: translateY(0);
-    background-color: red;
-  }
-  50% {
-    transform: translateY(300px);
-    background-color: blue;
-  }
-} */
 html,
 body {
   margin: 0;
@@ -101,18 +29,47 @@ main {
   justify-content: space-between;
 }
 
-/* Styles for the bouncing balls */
-.bounce,
-.bounce2,
-.bounce3,
-.bounce4 {
+
+.bounce{
   margin: 3rem;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   animation: bounceAndChangeColor 2s ease infinite;
-  transition: transform 1s ease; /* Add a transform transition for smooth flipping */
-  transform-style: preserve-3d; /* Preserve the 3D transformations */
+  transition: transform 1s ease; 
+  transform-style: preserve-3d; 
+}
+.bounce2 {
+  margin: 3rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: bounceAndChangeColor 7s ease infinite;
+  transition: transform 1s ease; 
+  transform-style: preserve-3d; 
+}
+.bounce3 {
+  margin: 3rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: bounceAndChangeColor 3s ease infinite;
+  transition: transform 1s ease; 
+  transform-style: preserve-3d; 
+}
+.bounce4 {
+  margin: 3rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: bounceAndChangeColor 5s ease infinite;
+  transition: transform 1s ease; 
+  transform-style: preserve-3d; 
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
 }
 
 @keyframes bounceAndChangeColor {
@@ -127,10 +84,10 @@ main {
   }
 }
 
-/* Styles for the Chewbacca reveal effect */
+
 .ball-container {
   position: relative;
-  perspective: 1000px; /* Perspective for 3D effect */
+  perspective: 1000px; 
 }
 
 .hidden-image {
@@ -139,18 +96,18 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hide the back of the container */
+  backface-visibility: hidden; 
   transform: rotateY(
     180deg
-  ); /* Initially, hide the image by rotating 180 degrees around the Y-axis */
-  transition: transform 1s ease; /* Add a transform transition for smooth flipping */
+  ); 
+  transition: transform 1s ease; /
 }
 
-/* Add hover effect to flip the ball and reveal the hidden image */
+
 .ball-container:hover .bounce3 {
-  transform: rotateY(180deg); /* Flip the ball */
+  transform: rotateY(180deg); 
 }
 
 .ball-container:hover .hidden-image {
-  transform: rotateY(0deg); /* Reveal the hidden image */
+  transform: rotateY(0deg); 
 }
