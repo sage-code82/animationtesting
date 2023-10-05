@@ -1,27 +1,62 @@
 body {
   background-size: 400% 400%;
   height: 100vh;
+}
+
+header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 h2 {
   font-family: "Cutive Mono", monospace;
   color: black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
 }
 
 .bounce {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   margin: 3rem;
-  background-color: green;
   width: 200px;
   height: 200px;
   border-radius: 50%;
 
-  animation: bounceAndChangeColor 4s ease infinite;
+  animation: bounceAndChangeColor 2s ease infinite;
+}
+
+.bounce2 {
+  margin: 3rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  animation: bounceAndChangeColor 9s ease infinite;
+}
+
+.bounce3 {
+  margin: 3rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  animation: bounceAndChangeColor 6s ease infinite;
+}
+
+.bounce4 {
+  margin: 3rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  animation: bounceAndChangeColor 11s ease infinite;
 }
 
 @keyframes bounceAndChangeColor {
@@ -31,7 +66,7 @@ h2 {
     background-color: red;
   }
   50% {
-    transform: translateY(-300px);
+    transform: translateY(300px);
     background-color: blue; /* Change color when it reaches the bottom */
   }
 }
